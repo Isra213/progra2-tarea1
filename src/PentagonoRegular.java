@@ -2,17 +2,18 @@ import java.util.Scanner;
 
 
 public class PentagonoRegular {
-
+//  nombramos la variable 
 	int  lado;
 	Scanner n;
 	
 	PentagonoRegular(int lado) {
-		// TODO Auto-generated constructor stub
+		
 		
 		getLado();
 		
 	    System.out.println("El perimetro de un pentagono regular es: "+getPerimetro());
 	}
+	// este es para que puedas ingresar el numero de lados se saca la multiplicacion  de todos los lados 
 	
 	int getLado(){
 		n = new Scanner(System.in);
