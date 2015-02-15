@@ -2,6 +2,7 @@
 
 public class PentagonoRegular 
 {
+ //nombramos la variable lado para poner los valores de cada lado y el perimitro se saca multiplicando  lado por 5
 int lado;
 PentagonoRegular(int lado)
 {
