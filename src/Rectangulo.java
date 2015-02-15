@@ -1,49 +1,27 @@
-// el ejercicio consiste en sacar el area  y para sacar el area se multiplica base por altura 
-
-import java.util.Scanner;
-//nombre mis variables 
-
+// el ejercicio consiste en sacar el area  y para sacar el area se multiplica base por altura entonces se nombran las variables base y altura 
 public class Rectangulo {
-	int base;
-	int altura;
-	Scanner n;
-
-	Rectangulo(int base, int altura) { 
-		
-		getBase();
-		getAltura();
-	    System.out.println("El area de un rectangulo de base "+base+" y altura "+altura+" es igual a: "+getArea()+" y el perimetro es: "+getPerimetro());
-	}
-	// aqui se pide que ingrese el numero para la base
-	int getBase(){
-		n = new Scanner(System.in);
-		System.out.println("Ingresa la base");  
-	    base = n.nextInt(); 
-	    
-		return base;
-	}
-	
-	void setBase( int base){
-		this.base = base;
-	}
-		// aqui se pide que ingrese el numero para la altura 
-	int getAltura(){
-		n = new Scanner(System.in);
-		System.out.println("Ingresa la altura");  
-	    altura = n.nextInt();
-		return base;
-	}
-	
-	void setAltura( int altura){
-		this.altura = altura;
-	}
-	// se efectua la multiplicacion 
-	
-	int getArea(){
-		return base*altura;
-	}
-	int getPerimetro(){
-		return 2*(base+altura);
-	}
-
+int altura, base;
+Rectangulo(int base, int altura) // este es el constructor que vimos hoy 
+{
+this.base = base;
+this.altura = altura;		
+}
+int getAltura()
+{
+return altura;
+}
+int getBase()
+{
+return base;
+}
+void setAltura(int altura)
+{
+this.altura = altura;
+}
+void setBase(int base)
+{
+this.base = base;
+}
+return (altura*base);
+}
 }
